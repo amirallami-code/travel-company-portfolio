@@ -21,7 +21,7 @@ If you would like to contribute to this project, please follow these steps:
 - Submit a pull request.
 
 ## License
-This project is not licensed.
+This project does not have any license.
 
 ## Contact Information
 If you have any questions or concerns about this project, please contact us at amirallami.dev@gmail.com
