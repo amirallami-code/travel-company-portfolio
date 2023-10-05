@@ -64,6 +64,13 @@ a {
   display: flex;
   align-items: center;
 }
+/*
+
+========
+App Logo
+========
+
+*/
 .app-logo {
   display: block;
   width: 5.5rem;
@@ -73,6 +80,13 @@ a {
   width: 100%;
   height: 100%;
 }
+/*
+
+=========
+Main Menu
+=========
+
+*/
 .menu {
   display: none;
   margin: 2.3rem;
@@ -124,6 +138,13 @@ a {
   -o-border-radius: 5rem;
   z-index: -1;
 }
+/*
+
+===============
+Navigation Menu
+===============
+
+*/
 .nav-menu {
   position: fixed;
   top: 0;
@@ -163,6 +184,13 @@ a {
   margin-left: 0.7rem;
   cursor: default;
 }
+/*
+
+===========
+Mobile Menu
+===========
+
+*/
 .mobile-menu {
   display: flex;
   flex-direction: column;
@@ -179,6 +207,13 @@ a {
 .mobile-menu__link {
   color: var(--white);
 }
+/*
+
+=======
+Nav Links
+=======
+
+*/
 .nav-menu__links {
 }
 .nav-menu__link {
@@ -204,6 +239,13 @@ a {
 .nav-menu__link:hover {
   opacity: 0.8;
 }
+/*
+
+============
+Header Links
+============
+
+*/
 .header__links {
   display: none;
 }
@@ -230,6 +272,13 @@ a {
   background-color: var(--white);
   color: var(--black);
 }
+/*
+
+=======
+Nav Btn
+=======
+
+*/
 .nav__btn {
   background-color: var(--white);
   width: 5.5rem;
