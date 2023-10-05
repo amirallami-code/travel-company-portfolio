@@ -10,7 +10,18 @@ container
   margin-right: auto;
   margin-left: auto;
 }
-
+/* @media (max-width: 300px) {
+  body {
+    max-width: none;
+    overflow-x: ;
+  }
+} */
+@media (max-width: 380px) {
+  .header-content__title {
+    font-size: 3.25rem;
+    line-height: 3.5rem;
+  }
+}
 @media (min-width: 576px) {
   .container {
     width: 54rem;
@@ -26,14 +37,26 @@ container
     width: 96rem;
   }
 
-  .nav__btn {
-    display: none;
+  .nav__btn,
+  .nav-menu,
+  .overlay {
+    display: none !important;
+  }
+  .overlay {
+    opacity: 0 !important;
   }
   .menu {
     display: flex;
   }
-  .header__links {
+  .nav__links {
     display: block;
+  }
+  .header-content {
+    margin-top: 5rem;
+  }
+  .header-content__title {
+    font-size: 6rem;
+    line-height: 7rem;
   }
 }
 @media (min-width: 1200px) {

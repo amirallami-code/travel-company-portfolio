@@ -23,7 +23,7 @@ body {
 
 /*
 
--- Reset Style
+-- Reset Style --
 
 */
 
@@ -33,13 +33,41 @@ a {
 
 /*
 
--- Helper Class
+-- Componenet --
 
 */
+.btn {
+  display: block;
+  width: 18rem;
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 10rem;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem;
+  margin: 0 auto;
+  font-family: "Roboto Medium";
+  transition: all 150ms ease-in-out;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.85;
+}
+.disableResponsive {
+  width: 30rem;
+}
 
 /*
 
--- Add Style
+-- Add Style --
 
 */
 .header {
@@ -47,7 +75,8 @@ a {
     url("../images/header-bg.jpg");
   background-position: center;
   background-size: cover;
-  min-height: 55rem;
+  min-height: 85vh;
+  min-width: 300px;
   border-radius: 0 0 10rem 10rem;
   -webkit-border-radius: 0 0 10rem 10rem;
   -moz-border-radius: 0 0 10rem 10rem;
@@ -92,7 +121,7 @@ Main Menu
   margin: 2.3rem;
 }
 .menu__item {
-  padding: 0.5rem 1.2rem;
+  margin: 0.5rem 1.2rem;
   cursor: pointer;
 }
 .menu__item:hover {
@@ -166,6 +195,8 @@ Navigation Menu
 .nav-menu__information {
   display: flex;
   align-items: center;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #ffffffc1;
 }
 .nav-menu__information--logo {
   display: block;
@@ -206,6 +237,47 @@ Mobile Menu
 }
 .mobile-menu__link {
   color: var(--white);
+  position: relative;
+  transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+}
+.mobile-menu__link::before,
+.mobileActive::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1rem;
+  height: 0.3rem;
+  background-color: var(--white);
+  margin: auto;
+  border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
+  transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+}
+.mobile-menu__link::before {
+  opacity: 0;
+}
+.mobileActive::before {
+  opacity: 1;
+}
+.mobile-menu__link:hover,
+.mobileActive {
+  padding-left: 2rem;
+}
+.mobile-menu__link:hover::before {
+  opacity: 1;
 }
 /*
 
@@ -241,15 +313,15 @@ Nav Links
 }
 /*
 
-============
-Header Links
-============
+=========
+Nav Links
+=========
 
 */
-.header__links {
+.nav__links {
   display: none;
 }
-.header__link {
+.nav__link {
   color: var(--white);
   font-family: "Roboto Medium";
   padding: 1rem 2rem;
@@ -260,7 +332,7 @@ Header Links
   -ms-border-radius: 5rem;
   -o-border-radius: 5rem;
 }
-.header__link--border {
+.nav__link--border {
   border: 2px solid var(--white);
   transition: all 150ms ease-in;
   -webkit-transition: all 150ms ease-in;
@@ -268,7 +340,7 @@ Header Links
   -ms-transition: all 150ms ease-in;
   -o-transition: all 150ms ease-in;
 }
-.header__link--border:hover {
+.nav__link--border:hover {
   background-color: var(--white);
   color: var(--black);
 }
@@ -366,4 +438,37 @@ Nav Btn
   -ms-transition: all 200ms ease-in-out;
   -o-transition: all 200ms ease-in-out;
   -webkit-filter: blur(0.7);
+}
+
+/*
+
+==============
+Header Content
+==============
+
+*/
+
+.header-content {
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+  margin-top: 8.5rem;
+  padding: 0 1rem;
+}
+.header-content__title {
+  font-family: "Archivo Black";
+  font-size: 4.25rem;
+  line-height: 4.5rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto 1.5rem auto;
+}
+.header-content__caption {
+  max-width: 52rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto 2rem auto;
+}
+.header-content__link {
+  background-color: var(--orange);
 }

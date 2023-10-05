@@ -1,6 +1,7 @@
-const navBtn = document.querySelector('.nav__btn')
-const navMenu = document.querySelector('.nav-menu')
-const overlay = document.querySelector('.overlay')
+let $ = document
+const navBtn = $.querySelector('.nav__btn')
+const navMenu = $.querySelector('.nav-menu')
+const overlay = $.querySelector('.overlay')
 let isNavOpen = false;
 
 // Menu Logic
@@ -21,3 +22,14 @@ navBtn.addEventListener('click', function () {
         isNavOpen = true;
     }
 })
+
+
+// disable responsive for devices under 300px width
+function disableResponsive() {
+    if (window.innerWidth < 300) {
+        $.body.classList.add('disableResponsive');
+    } else {
+        $.body.classList.remove('disableResponsive');
+    }
+}
+window.addEventListener('resize', disableResponsive);
