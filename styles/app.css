@@ -3,6 +3,10 @@
   --white: #fff;
   --gray: #d2d2d2;
   --black: #3b3735;
+  --app-bg: #faf4f2;
+  --primary-font: "Roboto", Arial, Helvetica, sans-serif;
+  --primary-font-md: "Roboto Medium", Arial, Helvetica, sans-serif;
+  --secondary-font: "Archivo Black", Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -18,7 +22,8 @@ html {
 body {
   line-height: 1.6;
   font-size: 1.6rem;
-  font-family: "Roboto";
+  font-family: var(--primary-font);
+  background-color: var(--app-bg);
 }
 
 /*
@@ -50,7 +55,7 @@ a {
   -ms-border-radius: 10rem;
   -o-border-radius: 10rem;
   margin: 0 auto;
-  font-family: "Roboto Medium";
+  font-family: var(--primary-font-md);
   transition: all 150ms ease-in-out;
   -webkit-transition: all 150ms ease-in-out;
   -moz-transition: all 150ms ease-in-out;
@@ -75,7 +80,7 @@ a {
     url("../images/header-bg.jpg");
   background-position: center;
   background-size: cover;
-  min-height: 85vh;
+  min-height: 90vh;
   min-width: 300px;
   border-radius: 0 0 10rem 10rem;
   -webkit-border-radius: 0 0 10rem 10rem;
@@ -100,6 +105,7 @@ App Logo
 ========
 
 */
+
 .app-logo {
   display: block;
   width: 5.5rem;
@@ -323,7 +329,7 @@ Nav Links
 }
 .nav__link {
   color: var(--white);
-  font-family: "Roboto Medium";
+  font-family: var(--primary-font-md);
   padding: 1rem 2rem;
   border-radius: 5rem;
 
@@ -456,19 +462,77 @@ Header Content
   padding: 0 1rem;
 }
 .header-content__title {
-  font-family: "Archivo Black";
+  font-family: var(--secondary-font);
   font-size: 4.25rem;
   line-height: 4.5rem;
   left: 0;
   right: 0;
   margin: 0 auto 1.5rem auto;
+  cursor: default;
 }
 .header-content__caption {
   max-width: 52rem;
   left: 0;
   right: 0;
   margin: 0 auto 2rem auto;
+  cursor: default;
 }
 .header-content__link {
   background-color: var(--orange);
+}
+
+/*
+
+-- Main --
+
+*/
+
+.main {
+  padding: 4rem 0;
+}
+
+/*
+
+========
+Services
+========
+
+*/
+
+.services {
+  margin-top: -17rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15rem -1rem 0 -1rem;
+}
+.service {
+  height: 30rem;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  background-color: var(--white);
+  text-align: center;
+  margin: 0 1rem 2rem 1rem;
+  padding: 0 3rem;
+  color: var(--black);
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+.service__img {
+  display: block;
+}
+.service__title {
+  font-size: 1.8rem;
+  font-family: var(--secondary-font);
+  cursor: default;
+  margin: 2rem 0 0.7rem 0;
+}
+.service__caption {
+  cursor: default;
 }

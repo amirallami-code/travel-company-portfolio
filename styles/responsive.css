@@ -36,7 +36,6 @@ container
   .container {
     width: 96rem;
   }
-
   .nav__btn,
   .nav-menu,
   .overlay {
@@ -57,6 +56,9 @@ container
   .header-content__title {
     font-size: 6rem;
     line-height: 7rem;
+  }
+  .services {
+    margin-top: -10rem;
   }
 }
 @media (min-width: 1200px) {
