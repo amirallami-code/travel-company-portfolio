@@ -238,9 +238,6 @@ Mobile Menu
   width: min-content;
   margin-bottom: 1rem;
 }
-.mobile-menu__item:hover {
-  opacity: 0.8;
-}
 .mobile-menu__link {
   color: var(--white);
   position: relative;
@@ -257,8 +254,8 @@ Mobile Menu
   left: 0;
   top: 0;
   bottom: 0;
-  width: 1rem;
-  height: 0.3rem;
+  width: 1.3rem;
+  height: 0.4rem;
   background-color: var(--white);
   margin: auto;
   border-radius: 5rem;
@@ -287,9 +284,9 @@ Mobile Menu
 }
 /*
 
-=======
+=========
 Nav Links
-=======
+=========
 
 */
 .nav-menu__links {
@@ -535,4 +532,46 @@ Services
 }
 .service__caption {
   cursor: default;
+}
+
+/*
+
+============
+Destinations
+============
+
+*/
+
+.destinations {
+  text-align: center;
+}
+.destinations__logo {
+}
+.destinations__title {
+}
+.destinations__places {
+}
+.place {
+}
+.place__banner {
+}
+.place__img {
+}
+.place__like {
+}
+.place__like-icon {
+}
+.place__like-icon--active {
+}
+.place__price {
+}
+.place__price--text {
+}
+.place__title {
+}
+.place__caption {
+}
+.place__link {
+}
+.destinations__btn {
 }
