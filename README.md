@@ -8,6 +8,7 @@ To install this project, simply clone the repository and open the index.html fil
 ```bash
   git clone https://github.com/amirallami-code/travel-company-portfolio.git
 ```
+
 ## Usage
 The website is easy to navigate and provides information about the company’s services, destinations, and customer reviews. You can browse the website by clicking on the navigation links at the top of the page.
 
