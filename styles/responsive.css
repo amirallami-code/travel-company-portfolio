@@ -10,12 +10,6 @@ container
   margin-right: auto;
   margin-left: auto;
 }
-/* @media (max-width: 300px) {
-  body {
-    max-width: none;
-    overflow-x: ;
-  }
-} */
 @media (max-width: 380px) {
   .header-content__title {
     font-size: 3.25rem;

@@ -2,6 +2,8 @@ let $ = document
 const navBtn = $.querySelector('.nav__btn')
 const navMenu = $.querySelector('.nav-menu')
 const overlay = $.querySelector('.overlay')
+const placeLikeBtns = $.querySelectorAll('.place__like-icon')
+
 let isNavOpen = false;
 
 // Menu Logic
@@ -23,6 +25,30 @@ navBtn.addEventListener('click', function () {
     }
 })
 
+// like button logic
+placeLikeBtns.forEach((button) => {
+    button.addEventListener('click', event => {
+        targetElement = event.target
+        targetTagName = event.target.tagName
+
+        if (targetTagName === 'svg') {
+            targetElement = event.target.lastElementChild
+        }
+        targetTagName = targetElement.tagName
+        targetClassList = targetElement.classList
+
+        if (targetClassList.contains('place__like-icon--active')) {
+            targetClassList.remove('place__like-icon--active')
+        } else {
+            targetClassList.add('place__like-icon--active')
+        }
+    })
+})
+
+// FUNCTIONS
+const findUserLikeButton = button => {
+    console.log(button)
+}
 
 // disable responsive for devices under 300px width
 function disableResponsive() {
