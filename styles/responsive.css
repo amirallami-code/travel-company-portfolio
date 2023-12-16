@@ -121,6 +121,12 @@ container
   .selectWrapper {
     flex-direction: row;
   }
+  .searchBoxWrapper {
+    width: 60%;
+  }
+  .selectWrapper {
+    width: 60%;
+  }
 }
 @media (min-width: 1200px) {
   .container {

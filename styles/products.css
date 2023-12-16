@@ -494,7 +494,7 @@ search products
 .searchBoxWrapper {
   display: flex;
   justify-content: center;
-  width: 60%;
+  width: 95%;
 }
 .searchIconWrapper {
   display: flex;
@@ -545,7 +545,7 @@ search products
   margin-top: 20px;
   padding: 25px;
   border-radius: 50px;
-  width: 60%;
+  width: 95%;
   background-color: #faf4f2;
   border-radius: 10px;
   -webkit-border-radius: 10px;
