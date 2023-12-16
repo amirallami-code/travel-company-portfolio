@@ -51,18 +51,18 @@ a {
   text-align: center;
   background-color: var(--black);
   color: var(--white);
-  border-radius: 10rem;
   -webkit-border-radius: 10rem;
   -moz-border-radius: 10rem;
   -ms-border-radius: 10rem;
   -o-border-radius: 10rem;
+  border-radius: 10rem;
   margin: 0 auto;
   font-family: var(--primary-font-md);
-  transition: all 150ms ease-in-out;
   -webkit-transition: all 150ms ease-in-out;
   -moz-transition: all 150ms ease-in-out;
   -ms-transition: all 150ms ease-in-out;
   -o-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
   cursor: pointer;
 }
 .btn:hover {
@@ -84,11 +84,11 @@ a {
   background-size: cover;
   min-height: 90vh;
   min-width: 300px;
-  border-radius: 0 0 10rem 10rem;
   -webkit-border-radius: 0 0 10rem 10rem;
   -moz-border-radius: 0 0 10rem 10rem;
   -ms-border-radius: 0 0 10rem 10rem;
   -o-border-radius: 0 0 10rem 10rem;
+  border-radius: 0 0 10rem 10rem;
 }
 .nav {
   display: flex;
@@ -139,11 +139,11 @@ Main Menu
 .menu__link {
   color: var(--grey);
   cursor: pointer;
-  transition: color 150ms ease-in-out;
   -webkit-transition: color 150ms ease-in-out;
   -moz-transition: color 150ms ease-in-out;
   -ms-transition: color 150ms ease-in-out;
   -o-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
 }
 .menu__link:hover {
   color: var(--white);
@@ -163,9 +163,7 @@ Main Menu
   right: 0;
   margin: 0 auto;
   opacity: 0.8;
-  border-radius: 5rem;
   background-color: var(--orange);
-  transform: rotate(50deg);
   -webkit-transform: rotate(50deg);
   -moz-transform: rotate(50deg);
   -ms-transform: rotate(50deg);
@@ -174,7 +172,9 @@ Main Menu
   -moz-border-radius: 5rem;
   -ms-border-radius: 5rem;
   -o-border-radius: 5rem;
+  border-radius: 5rem;
   z-index: -1;
+  transform: rotate(50deg);
 }
 /*
 
@@ -192,11 +192,11 @@ Navigation Menu
   background-color: var(--orange);
   padding: 2.5rem;
   z-index: 2;
-  transition: all 250ms ease-in-out;
   -webkit-transition: all 250ms ease-in-out;
   -moz-transition: all 250ms ease-in-out;
   -ms-transition: all 250ms ease-in-out;
   -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
 .nav-menu--open {
   left: 0;
@@ -209,7 +209,6 @@ Navigation Menu
 }
 .nav-menu__information--logo {
   display: block;
-  border-radius: 5rem;
   border: 2px solid var(--white);
   width: 4.5rem;
   height: 4.5rem;
@@ -217,6 +216,7 @@ Navigation Menu
   -moz-border-radius: 5rem;
   -ms-border-radius: 5rem;
   -o-border-radius: 5rem;
+  border-radius: 5rem;
 }
 .nav-menu__information--title {
   color: var(--white);
@@ -244,11 +244,11 @@ Mobile Menu
 .mobile-menu__link {
   color: var(--white);
   position: relative;
-  transition: all 200ms ease-in-out;
   -webkit-transition: all 200ms ease-in-out;
   -moz-transition: all 200ms ease-in-out;
   -ms-transition: all 200ms ease-in-out;
   -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 .mobile-menu__link::before,
 .mobileActive::before {
@@ -261,16 +261,16 @@ Mobile Menu
   height: 0.4rem;
   background-color: var(--white);
   margin: auto;
-  border-radius: 5rem;
   -webkit-border-radius: 5rem;
   -moz-border-radius: 5rem;
   -ms-border-radius: 5rem;
   -o-border-radius: 5rem;
-  transition: all 200ms ease-in-out;
+  border-radius: 5rem;
   -webkit-transition: all 200ms ease-in-out;
   -moz-transition: all 200ms ease-in-out;
   -ms-transition: all 200ms ease-in-out;
   -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 .mobile-menu__link::before {
   opacity: 0;
@@ -292,8 +292,6 @@ Nav Links
 =========
 
 */
-.nav-menu__links {
-}
 .nav-menu__link {
   color: var(--orange);
   background-color: var(--white);
@@ -303,8 +301,6 @@ Nav Links
   flex-grow: 1;
   text-align: center;
   width: 100%;
-  transition: all 150ms ease-in-out;
-  border-radius: 0.5rem;
   -webkit-border-radius: 0.5rem;
   -moz-border-radius: 0.5rem;
   -ms-border-radius: 0.5rem;
@@ -313,6 +309,8 @@ Nav Links
   -moz-transition: all 150ms ease-in-out;
   -ms-transition: all 150ms ease-in-out;
   -o-transition: all 150ms ease-in-out;
+  border-radius: 0.5rem;
+  transition: all 150ms ease-in-out;
 }
 .nav-menu__link:hover {
   opacity: 0.8;
@@ -331,12 +329,11 @@ Nav Links
   color: var(--white);
   font-family: var(--primary-font-md);
   padding: 1rem 2rem;
-  border-radius: 5rem;
-
   -webkit-border-radius: 5rem;
   -moz-border-radius: 5rem;
   -ms-border-radius: 5rem;
   -o-border-radius: 5rem;
+  border-radius: 5rem;
 }
 .nav__link--border {
   border: 2px solid var(--white);
@@ -361,11 +358,11 @@ Nav Btn
   background-color: var(--white);
   width: 5.5rem;
   height: 5.5rem;
-  border-radius: 2rem;
   -webkit-border-radius: 2rem;
   -moz-border-radius: 2rem;
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
+  border-radius: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -378,8 +375,6 @@ Nav Btn
   height: 0.3rem;
   background-color: var(--orange);
   position: relative;
-  border-radius: 5rem;
-  transition: all 100ms ease-in-out;
   -webkit-border-radius: 5rem;
   -moz-border-radius: 5rem;
   -ms-border-radius: 5rem;
@@ -388,6 +383,8 @@ Nav Btn
   -moz-transition: all 100ms ease-in-out;
   -ms-transition: all 100ms ease-in-out;
   -o-transition: all 100ms ease-in-out;
+  border-radius: 5rem;
+  transition: all 100ms ease-in-out;
 }
 .nav__btn-line::before,
 .nav__btn-line::after {
@@ -397,11 +394,11 @@ Nav Btn
   height: 0.3rem;
   background-color: var(--orange);
   border-radius: 5rem;
-  transition: all 200ms ease-in-out;
   -webkit-transition: all 200ms ease-in-out;
   -moz-transition: all 200ms ease-in-out;
   -ms-transition: all 200ms ease-in-out;
   -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 .nav__btn-line::before {
@@ -414,18 +411,18 @@ Nav Btn
   background-color: transparent;
 }
 .nav__btn--open .nav__btn-line::before {
-  transform: translateY(6px) rotate(45deg);
   -webkit-transform: translateY(10px) rotate(45deg);
   -moz-transform: translateY(10px) rotate(45deg);
   -ms-transform: translateY(10px) rotate(45deg);
   -o-transform: translateY(10px) rotate(45deg);
+  transform: translateY(6px) rotate(45deg);
 }
 .nav__btn--open .nav__btn-line::after {
-  transform: translateY(-6px) rotate(-45deg);
   -webkit-transform: translateY(-6px) rotate(-45deg);
   -moz-transform: translateY(-6px) rotate(-45deg);
   -ms-transform: translateY(-6px) rotate(-45deg);
   -o-transform: translateY(-6px) rotate(-45deg);
+  transform: translateY(-6px) rotate(-45deg);
 }
 .overlay {
   display: none;
@@ -436,14 +433,13 @@ Nav Btn
   inset: 0;
   z-index: 1;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  -webkit-filter: blur(0.7);
   filter: blur(0.7);
-  transition: all 200ms ease-in-out;
-  transition: all 150ms ease-in-out;
   -webkit-transition: all 200ms ease-in-out;
   -moz-transition: all 200ms ease-in-out;
   -ms-transition: all 200ms ease-in-out;
   -o-transition: all 200ms ease-in-out;
-  -webkit-filter: blur(0.7);
+  transition: all 200ms ease-in-out;
 }
 
 /*
@@ -573,13 +569,13 @@ Destinations
   right: 0;
   margin: 1rem;
   padding: 4rem;
-  border-radius: 2rem;
   color: var(--black);
   background-color: var(--white);
   -webkit-border-radius: 2rem;
   -moz-border-radius: 2rem;
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
+  border-radius: 2rem;
 }
 .place__banner {
   position: relative;
@@ -587,16 +583,16 @@ Destinations
 .place__img {
   width: 100%;
   height: 100%;
-  user-select: none;
   -moz-user-select: -moz-none;
   -khtml-user-select: none;
   -webkit-user-select: none;
   -o-user-select: none;
-  border-radius: 2rem;
+  user-select: none;
   -webkit-border-radius: 2rem;
   -moz-border-radius: 2rem;
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
+  border-radius: 2rem;
 }
 .place__like {
   position: absolute;
@@ -610,11 +606,11 @@ Destinations
   margin: 1.5rem;
   padding-bottom: 0.5rem;
   background-color: var(--white);
-  border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
+  border-radius: 1rem;
 }
 .place__like-icon {
   cursor: pointer;
@@ -635,11 +631,11 @@ Destinations
   margin: auto;
   cursor: default;
   background-color: var(--white);
-  border-radius: 2rem 2rem 0 0;
   -webkit-border-radius: 2rem 2rem 0 0;
   -moz-border-radius: 2rem 2rem 0 0;
   -ms-border-radius: 2rem 2rem 0 0;
   -o-border-radius: 2rem 2rem 0 0;
+  border-radius: 2rem 2rem 0 0;
 }
 .place__price--text {
   color: var(--orange);
@@ -693,8 +689,6 @@ Destinations
   flex-direction: column-reverse;
   margin: 6rem 0;
 }
-.newsletter__content {
-}
 .newsletter__title {
   font-family: var(--secondary-font);
   font-size: 3rem;
@@ -742,9 +736,6 @@ Destinations
   align-items: center;
   justify-content: center;
   cursor: pointer;
-}
-
-.newsletter__banner {
 }
 .newsletter__img {
   width: 100%;
