@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>amirhossein - sign up page</title>
+    <!---- Favicon ----->
+    <link rel="icon" type="image/png" href="images/app-favicon.svg" />
+    <!------ CSS ------->
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/fonts.css" />
+    <link rel="stylesheet" href="styles/register-login.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+  </head>
+  <body>
+    <main class="main">
+      <p class="registerText">REGISTER</p>
+      <p class="guideRegisterText">enter your information to sign up.</p>
+      <form class="form">
+        <label for="firstNameInput" id="firstNameLabel">first name</label>
+        <input type="text" id="firstNameInput" name="first-name" required />
+
+        <label for="lastNameInput" id="lastNameLabel">last name</label>
+        <input type="text" id="lastNameInput" name="last-name" required />
+
+        <label for="emailInput" id="emailLabel">E-mail</label>
+        <input type="text" id="emailInput" name="email" required />
+
+        <label for="passwordInput" id="passwordLabel">Password</label>
+        <input type="text" id="passwordInput" name="password" required />
+
+        <label for="passAgainInput" id="passwordAgainLabel"
+          >Confirm Password</label
+        >
+        <input
+          type="text"
+          id="passAgainInput"
+          name="confirm-password"
+          required
+        />
+      </form>
+      <button type="submit" class="confirmBtn">Confirm</button>
+      <p class="signInBtn">
+        already have an account?
+        <a href="login.html" class="signInLink">sign in</a>.
+      </p>
+      <a href="index.html" class="buttonForBackToHome">back to home</a>
+    </main>
+  </body>
+</html>

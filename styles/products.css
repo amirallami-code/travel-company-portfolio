@@ -29,20 +29,20 @@ body {
 }
 
 /*
-
--- Reset Style --
-
-*/
+  
+  -- Reset Style --
+  
+  */
 
 a {
   text-decoration: none;
 }
 
 /*
-
--- Componenet --
-
-*/
+  
+  -- Componenet --
+  
+  */
 .btn {
   display: block;
   width: 18rem;
@@ -73,22 +73,20 @@ a {
 }
 
 /*
-
--- Add Style --
-
-*/
+  
+  -- Add Style --
+  
+  */
 .header {
+  display: flex;
+  justify-content: center;
   background: linear-gradient(rgba(59, 55, 53, 0.5), rgba(59, 55, 53, 0.5)),
     url("../images/header-bg.jpg");
   background-position: center;
   background-size: cover;
-  min-height: 90vh;
+  min-height: 100vh;
   min-width: 300px;
-  border-radius: 0 0 10rem 10rem;
-  -webkit-border-radius: 0 0 10rem 10rem;
-  -moz-border-radius: 0 0 10rem 10rem;
-  -ms-border-radius: 0 0 10rem 10rem;
-  -o-border-radius: 0 0 10rem 10rem;
+  padding-bottom: 50px;
 }
 .nav {
   display: flex;
@@ -101,12 +99,12 @@ a {
   align-items: center;
 }
 /*
-
-========
-App Logo
-========
-
-*/
+  
+  ========
+  App Logo
+  ========
+  
+  */
 
 .app-logo {
   display: block;
@@ -118,12 +116,12 @@ App Logo
   height: 100%;
 }
 /*
-
-========
-adverise
-========
-
-*/
+  
+  ========
+  adverise
+  ========
+  
+  */
 .advertise {
   display: flex;
   justify-content: center;
@@ -145,18 +143,19 @@ adverise
   padding: 10px;
 }
 /*
-
-=========
-Main Menu
-=========
-
-*/
+  
+  =========
+  Main Menu
+  =========
+  
+  */
 .menu {
   display: none;
   position: relative;
   margin: 2.3rem;
 }
 .menu__item {
+  color: #d2d2d2;
   margin: 0.5rem 1.2rem;
   cursor: pointer;
 }
@@ -164,7 +163,7 @@ Main Menu
   cursor: pointer;
 }
 .menu__link {
-  color: var(--grey);
+  color: var(--gray);
   cursor: pointer;
   transition: color 150ms ease-in-out;
   -webkit-transition: color 150ms ease-in-out;
@@ -204,12 +203,12 @@ Main Menu
   z-index: -1;
 }
 /*
-
-===============
-Navigation Menu
-===============
-
-*/
+    
+    ===============
+    Navigation Menu
+    ===============
+    
+    */
 .nav-menu {
   position: fixed;
   top: 0;
@@ -252,12 +251,12 @@ Navigation Menu
   cursor: default;
 }
 /*
-
-===========
-Mobile Menu
-===========
-
-*/
+    
+    ===========
+    Mobile Menu
+    ===========
+    
+    */
 .mobile-menu {
   display: flex;
   flex-direction: column;
@@ -313,12 +312,12 @@ Mobile Menu
   opacity: 1;
 }
 /*
-
-=========
-Nav Links
-=========
-
-*/
+    
+    =========
+    Nav Links
+    =========
+    
+    */
 .nav-menu__links {
 }
 .nav-menu__link {
@@ -345,12 +344,12 @@ Nav Links
   opacity: 0.8;
 }
 /*
-
-=========
-Nav Links
-=========
-
-*/
+    
+    =========
+    Nav Links
+    =========
+    
+    */
 .nav__links {
   display: none;
 }
@@ -378,12 +377,12 @@ Nav Links
   color: var(--black);
 }
 /*
-
-=======
-Nav Btn
-=======
-
-*/
+    
+    =======
+    Nav Btn
+    =======
+    
+    */
 .nav__btn {
   background-color: var(--white);
   width: 5.5rem;
@@ -472,119 +471,115 @@ Nav Btn
   -o-transition: all 200ms ease-in-out;
   -webkit-filter: blur(0.7);
 }
-
 /*
 
-==============
-Header Content
-==============
+search products
 
 */
 
-.header-content {
-  align-items: center;
-  text-align: center;
-  color: var(--white);
-  margin-top: 8.5rem;
-  padding: 0 1rem;
-}
-.header-content__title {
-  font-family: var(--secondary-font);
-  font-size: 4.25rem;
-  line-height: 4.5rem;
-  left: 0;
-  right: 0;
-  margin: 0 auto 1.5rem auto;
-  cursor: default;
-}
-.header-content__caption {
-  max-width: 52rem;
-  left: 0;
-  right: 0;
-  margin: 0 auto 2rem auto;
-  cursor: default;
-}
-.header-content__link {
-  background-color: var(--orange);
-}
-
-/*
-
--- Main --
-
-*/
-
-.main {
-  padding: 4rem 0;
-}
-
-/*
-
-========
-Services
-========
-
-*/
-
-.services {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15rem -1rem 0rem -1rem;
-}
-.service {
-  height: 30rem;
-  width: 30rem;
+.products {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
-  background-color: var(--white);
+}
+.productsTitle {
   text-align: center;
-  margin: 0 1rem 2rem 1rem;
-  padding: 0 3rem;
-  color: var(--black);
-  border-radius: 2rem;
-  -webkit-border-radius: 2rem;
-  -moz-border-radius: 2rem;
-  -ms-border-radius: 2rem;
-  -o-border-radius: 2rem;
+  font-size: 30px;
+  color: #fff;
+  font-family: var(--primary-font-md);
+  padding: 20px;
 }
-.service__img {
-  display: block;
+.searchBoxWrapper {
+  display: flex;
+  justify-content: center;
+  width: 60%;
 }
-.service__title {
-  font-size: 1.8rem;
-  font-family: var(--secondary-font);
-  cursor: default;
-  margin: 2rem 0 0.7rem 0;
+.searchIconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px 0px 0px 50px;
+  -webkit-border-radius: 50px 0px 0px 50px;
+  -moz-border-radius: 50px 0px 0px 50px;
+  -ms-border-radius: 50px 0px 0px 50px;
+  -o-border-radius: 50px 0px 0px 50px;
+  align-items: center;
+  padding-inline-start: 20px;
+  background-color: #faf4f2;
 }
-.service__caption {
-  cursor: default;
+.searchIcon {
+  height: 30px;
+  color: #3b3735;
+  width: auto;
+}
+.searchInputElement {
+  all: unset;
+  width: 100%;
+  padding: 20px;
+  text-decoration: none;
+  background-color: #faf4f2;
+  stroke: none;
+  font-size: 20px;
+}
+.searchBtn {
+  width: 180px;
+  background-color: #e76f51;
+  color: #fff;
+  font-size: 20px;
+  font-family: var(--primary-font-md);
+  cursor: pointer;
+  border: none;
+  border-radius: 0 50px 50px 0;
+  -webkit-border-radius: 0 50px 50px 0;
+  -moz-border-radius: 0 50px 50px 0;
+  -ms-border-radius: 0 50px 50px 0;
+  -o-border-radius: 0 50px 50px 0;
+}
+.selectWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 25px;
+  border-radius: 50px;
+  width: 60%;
+  background-color: #faf4f2;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.labelForFilter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  font-size: 20px;
+  font-family: var(--primary-font-md);
+  color: #3b3735;
+  padding-right: 5px;
+}
+.filter {
+  all: unset;
+  width: 100%;
+  appearance: 5px;
+  padding: 10px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border: 0.5px solid #3b373576;
+}
+.filter option {
+  font-size: 20px;
 }
 
-/*
-
-============
-Destinations
-============
-
-*/
-
-.destinations {
-  text-align: center;
-  margin: 8rem -1rem 0 -1rem;
-}
-.destinations__logo {
-  margin-bottom: 1rem;
-  width: 9rem;
-  height: auto;
-}
-.destinations__title {
-  font-family: var(--secondary-font);
-  font-size: 2rem;
-  color: var(--black);
-  cursor: default;
+.resultProducts {
 }
 .destinations__places {
   display: flex;
@@ -595,11 +590,11 @@ Destinations
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  width: 30rem;
+  width: 23rem;
   left: 0;
   right: 0;
   margin: 1rem;
-  padding: 4rem;
+  padding: 2rem;
   border-radius: 2rem;
   color: var(--black);
   background-color: var(--white);
@@ -651,7 +646,7 @@ Destinations
 }
 .place__price {
   width: 14rem;
-  height: 6rem;
+  height: 4rem;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -673,7 +668,7 @@ Destinations
 }
 .place__title {
   font-family: var(--secondary-font);
-  margin: 1.5rem 0;
+  margin: 0.5rem 0;
   cursor: default;
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -701,80 +696,49 @@ Destinations
   background-color: var(--orange);
   color: var(--white);
 }
-
 /*
 
-==================
-    NewsLetter
-==================
+page numbers
 
 */
 
-.newsletter {
-  background-color: var(--secondary-color);
-  border-radius: 2rem;
-  color: var(--dark);
-  text-align: center;
-  padding: 3rem 2rem;
+.pagenumbers {
   display: flex;
-  flex-direction: column-reverse;
-  margin: 6rem 0;
-}
-.newsletter__content {
-}
-.newsletter__title {
-  font-family: var(--secondary-font);
-  font-size: 3rem;
-  margin: 1.5rem auto;
-}
-.newsletter__caption {
-  font-family: var(--primary-font-md);
-}
-
-.newsletter__email-box {
-  position: relative;
-  background-color: var(--white);
-  height: 8rem;
-  padding: 0 1.5rem;
-  border-radius: 2rem;
-  margin-top: 2rem;
-}
-.newsletter__form {
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-.newsletter__email-icon {
-  flex-shrink: 0;
-}
-.newsletter__input {
-  outline: none;
-  border: none;
-  height: 100%;
-  color: #8d8d8d;
-  background-color: var(--white);
-  width: 100%;
-  padding: 0 1rem;
-  font-size: 1.6rem;
-}
-.newsletter__submit {
-  outline: none;
-  border: none;
-  background-color: var(--orange);
-  width: 5rem;
-  height: 5rem;
-  border-radius: 2rem;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  cursor: pointer;
+  align-items: center;
 }
 
-.newsletter__banner {
+.pagenumbers button {
+  width: 50px;
+  height: 50px;
+  appearance: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #e76f51;
+  border-radius: 15px;
+  margin: 5px;
+  transition: 0.4s;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: var(--primary-font-md);
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
-.newsletter__img {
-  width: 100%;
+
+.pagenumbers button:hover {
+  background-color: #ea876e;
+}
+
+.pagenumbers button.active {
+  background-color: #ea876e;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
 }
 
 /*
@@ -784,8 +748,6 @@ Destinations
 */
 .footer {
   background-color: var(--secondary-color);
-  border-top-left-radius: 5rem;
-  border-top-right-radius: 5rem;
   color: var(--dark);
   padding-bottom: 4rem;
 }
@@ -818,12 +780,12 @@ Destinations
 }
 
 /*
-
-==================
- Footer Left
-==================
-
-*/
+  
+  ==================
+   Footer Left
+  ==================
+  
+  */
 .footer__left {
   max-width: 60rem;
 }
@@ -843,12 +805,12 @@ Destinations
 }
 
 /*
-
-==================
- Footer Right
-==================
-
-*/
+  
+  ==================
+   Footer Right
+  ==================
+  
+  */
 
 .footer__right {
   display: flex;
