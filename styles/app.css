@@ -1,64 +1,7 @@
 @import "./root.css";
+@import "./reset.css";
+@import "./component.css";
 
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
-}
-body {
-  line-height: 1.6;
-  font-size: 1.6rem;
-  font-family: var(--primary-font);
-  background-color: var(--app-bg);
-}
-a {
-  text-decoration: none;
-}
-
-/*
-
--- Component --
-
-*/
-.btn {
-  display: block;
-  width: 18rem;
-  height: 5rem;
-  line-height: 5rem;
-  text-align: center;
-  background-color: var(--black);
-  color: var(--white);
-  -webkit-border-radius: 10rem;
-  -moz-border-radius: 10rem;
-  -ms-border-radius: 10rem;
-  -o-border-radius: 10rem;
-  border-radius: 10rem;
-  margin: 0 auto;
-  font-family: var(--primary-font-md);
-  -webkit-transition: all 150ms ease-in-out;
-  -moz-transition: all 150ms ease-in-out;
-  -ms-transition: all 150ms ease-in-out;
-  -o-transition: all 150ms ease-in-out;
-  transition: all 150ms ease-in-out;
-  cursor: pointer;
-}
-.btn:hover {
-  opacity: 0.85;
-}
-.disableResponsive {
-  width: 30rem;
-}
-
-/*
-
--- Add Style --
-
-*/
 .header {
   background: linear-gradient(rgba(59, 55, 53, 0.5), rgba(59, 55, 53, 0.5)),
     url("../images/header-bg.jpg");
@@ -524,7 +467,7 @@ Destinations
 
 .destinations {
   text-align: center;
-  margin: 8rem -1rem 0 -1rem;
+  margin: 6rem -1rem 0 -1rem;
 }
 .destinations__logo {
   margin-bottom: 1rem;
@@ -721,4 +664,57 @@ Destinations
 }
 .newsletter__img {
   width: 100%;
+}
+
+/* === about us page === */
+
+.aboutHeader {
+  background: linear-gradient(rgba(59, 55, 53, 0.8), rgba(59, 55, 53, 0.8)),
+    url("../images/header-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 300px;
+}
+.aboutUs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+.companyInformation {
+  max-width: 700px;
+}
+.aboutUsTitle {
+  font-size: 27.5px;
+  color: #e1e1e1;
+  font-family: var(--primary-font-md);
+}
+.aboutExplanation {
+  color: #d2d2d2;
+  font-size: 14px;
+}
+.tellInformation {
+  font-family: var(--primary-font-md);
+  color: #e76f51;
+}
+.addressInformation {
+  font-family: var(--primary-font-md);
+  color: #d2d2d2;
+}
+.addressInformation a {
+  color: #e76f51;
+}
+.iframeGoogleMapTemplate {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.whenTheStoreIsOpen {
+  font-size: 15px;
+  font-family: var(--primary-font-md);
+  color: #d2d2d2;
 }

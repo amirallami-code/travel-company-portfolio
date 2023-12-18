@@ -127,3 +127,21 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-family: var(--primary-font);
+  background-color: var(--app-bg);
+}
+a {
+  text-decoration: none;
+}
