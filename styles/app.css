@@ -603,7 +603,6 @@ Destinations
 ==================
 
 */
-
 .newsletter {
   background-color: var(--secondary-color);
   border-radius: 2rem;
@@ -622,7 +621,6 @@ Destinations
 .newsletter__caption {
   font-family: var(--primary-font-md);
 }
-
 .newsletter__email-box {
   position: relative;
   background-color: var(--white);
@@ -667,7 +665,6 @@ Destinations
 }
 
 /* === about us page === */
-
 .aboutHeader {
   background: linear-gradient(rgba(59, 55, 53, 0.8), rgba(59, 55, 53, 0.8)),
     url("../images/header-bg.jpg");
@@ -720,7 +717,6 @@ Destinations
 }
 
 /* === about us page === */
-
 .productsHeader {
   display: flex;
   justify-content: center;
@@ -733,12 +729,7 @@ Destinations
   padding-bottom: 50px;
 }
 
-/*
-
-search products
-
-*/
-
+/* search products */
 .products {
   width: 100%;
   display: flex;
@@ -839,9 +830,6 @@ search products
 }
 .filter option {
   font-size: 20px;
-}
-
-.resultProducts {
 }
 .destinations__places {
   display: flex;
@@ -958,19 +946,13 @@ search products
   background-color: var(--primary-color);
   color: var(--white);
 }
-/*
-
-page numbers
-
-*/
-
+/* page numbers */
 .pagenumbers {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-
 .pagenumbers button {
   width: 50px;
   height: 50px;
@@ -993,12 +975,90 @@ page numbers
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
 }
-
 .pagenumbers button:hover {
   background-color: #ea876e;
 }
-
 .pagenumbers button.active {
   background-color: #ea876e;
   box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* === register and login page === */
+.reglogBody {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  font-family: var(--primary-font);
+  background-image: linear-gradient(#e76f51, #cf4a28);
+  color: var(--black);
+}
+.reglogMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.registerText {
+  font-size: 35px;
+  font-weight: 700;
+  padding-bottom: 5px;
+  color: var(--black);
+  cursor: default;
+}
+.guideRegisterText {
+  cursor: default;
+  color: var(--seconde-gray);
+}
+.reglogForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.reglogForm label {
+  padding: 15px 0 5px 0;
+}
+.reglogForm input {
+  border: 2px solid var(--primary-color);
+  width: 225px;
+  height: 25px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.signInBtn {
+  padding-top: 20px;
+}
+.signInLink {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.confirmBtn {
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-size: 20px;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.confirmBtn:hover {
+  background-color: #cf4a28;
 }
