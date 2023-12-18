@@ -1,15 +1,4 @@
-:root {
-  --orange: #e76f51;
-  --secondary-color: #f8e1db;
-  --white: #fff;
-  --grey: #d2d2d2;
-  --seconde-grey: #8d8d8d;
-  --black: #3b3735;
-  --app-bg: #faf4f2;
-  --primary-font: "Roboto", Arial, Helvetica, sans-serif;
-  --primary-font-md: "Roboto Medium", Arial, Helvetica, sans-serif;
-  --secondary-font: "Archivo Black", Arial, Helvetica, sans-serif;
-}
+@import "./root.css";
 
 html {
   box-sizing: border-box;
@@ -27,20 +16,13 @@ body {
   font-family: var(--primary-font);
   background-color: var(--app-bg);
 }
-
-/*
-
--- Reset Style --
-
-*/
-
 a {
   text-decoration: none;
 }
 
 /*
 
--- Componenet --
+-- Component --
 
 */
 .btn {
@@ -163,7 +145,7 @@ Main Menu
   right: 0;
   margin: 0 auto;
   opacity: 0.8;
-  background-color: var(--orange);
+  background-color: var(--primary-color);
   -webkit-transform: rotate(50deg);
   -moz-transform: rotate(50deg);
   -ms-transform: rotate(50deg);
@@ -189,7 +171,7 @@ Navigation Menu
   left: -25rem;
   bottom: 0;
   width: 22.5rem;
-  background-color: var(--orange);
+  background-color: var(--primary-color);
   padding: 2.5rem;
   z-index: 2;
   -webkit-transition: all 250ms ease-in-out;
@@ -293,7 +275,7 @@ Nav Links
 
 */
 .nav-menu__link {
-  color: var(--orange);
+  color: var(--primary-color);
   background-color: var(--white);
   display: block;
   padding: 1rem;
@@ -373,7 +355,7 @@ Nav Btn
   display: block;
   width: 3rem;
   height: 0.3rem;
-  background-color: var(--orange);
+  background-color: var(--primary-color);
   position: relative;
   -webkit-border-radius: 5rem;
   -moz-border-radius: 5rem;
@@ -392,7 +374,7 @@ Nav Btn
   position: absolute;
   width: 3rem;
   height: 0.3rem;
-  background-color: var(--orange);
+  background-color: var(--primary-color);
   border-radius: 5rem;
   -webkit-transition: all 200ms ease-in-out;
   -moz-transition: all 200ms ease-in-out;
@@ -474,7 +456,7 @@ Header Content
   cursor: default;
 }
 .header-content__link {
-  background-color: var(--orange);
+  background-color: var(--primary-color);
 }
 
 /*
@@ -616,7 +598,7 @@ Destinations
   cursor: pointer;
 }
 .place__like-icon--active {
-  fill: var(--orange);
+  fill: var(--primary-color);
 }
 .place__price {
   width: 14rem;
@@ -638,7 +620,7 @@ Destinations
   border-radius: 2rem 2rem 0 0;
 }
 .place__price--text {
-  color: var(--orange);
+  color: var(--primary-color);
 }
 .place__title {
   font-family: var(--secondary-font);
@@ -662,12 +644,12 @@ Destinations
   color: var(--seconde-grey);
 }
 .destinations__btn {
-  border: 0.2rem solid var(--orange);
+  border: 0.2rem solid var(--primary-color);
   background-color: transparent;
-  color: var(--orange);
+  color: var(--primary-color);
 }
 .destinations__btn:hover {
-  background-color: var(--orange);
+  background-color: var(--primary-color);
   color: var(--white);
 }
 
@@ -727,7 +709,7 @@ Destinations
 .newsletter__submit {
   outline: none;
   border: none;
-  background-color: var(--orange);
+  background-color: var(--primary-color);
   width: 5rem;
   height: 5rem;
   border-radius: 2rem;

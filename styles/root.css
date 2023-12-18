@@ -1,0 +1,12 @@
+:root {
+  --primary-color: #e76f51;
+  --secondary-color: #f8e1db;
+  --white: #fff;
+  --black: #3b3735;
+  --grey: #d2d2d2;
+  --seconde-grey: #8d8d8d;
+  --app-bg: #faf4f2;
+  --primary-font: "Roboto", Arial, Helvetica, sans-serif;
+  --primary-font-md: "Roboto Medium", Arial, Helvetica, sans-serif;
+  --secondary-font: "Archivo Black", Arial, Helvetica, sans-serif;
+}

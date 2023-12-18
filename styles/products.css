@@ -1,15 +1,4 @@
-:root {
-  --orange: #e76f51;
-  --secondary-color: #f8e1db;
-  --white: #fff;
-  --grey: #d2d2d2;
-  --seconde-grey: #8d8d8d;
-  --black: #3b3735;
-  --app-bg: #faf4f2;
-  --primary-font: "Roboto", Arial, Helvetica, sans-serif;
-  --primary-font-md: "Roboto Medium", Arial, Helvetica, sans-serif;
-  --secondary-font: "Archivo Black", Arial, Helvetica, sans-serif;
-}
+@import "./root.css";
 
 html {
   box-sizing: border-box;
@@ -190,7 +179,7 @@ a {
   margin: 0 auto;
   opacity: 0.8;
   border-radius: 5rem;
-  background-color: var(--orange);
+  background-color: var(--primary-color);
   transform: rotate(50deg);
   -webkit-transform: rotate(50deg);
   -moz-transform: rotate(50deg);
@@ -215,7 +204,7 @@ a {
   left: -25rem;
   bottom: 0;
   width: 22.5rem;
-  background-color: var(--orange);
+  background-color: var(--primary-color);
   padding: 2.5rem;
   z-index: 2;
   transition: all 250ms ease-in-out;
@@ -321,7 +310,7 @@ a {
 .nav-menu__links {
 }
 .nav-menu__link {
-  color: var(--orange);
+  color: var(--primary-color);
   background-color: var(--white);
   display: block;
   padding: 1rem;
@@ -402,7 +391,7 @@ a {
   display: block;
   width: 3rem;
   height: 0.3rem;
-  background-color: var(--orange);
+  background-color: var(--primary-color);
   position: relative;
   border-radius: 5rem;
   transition: all 100ms ease-in-out;
@@ -421,7 +410,7 @@ a {
   position: absolute;
   width: 3rem;
   height: 0.3rem;
-  background-color: var(--orange);
+  background-color: var(--primary-color);
   border-radius: 5rem;
   transition: all 200ms ease-in-out;
   -webkit-transition: all 200ms ease-in-out;
@@ -642,7 +631,7 @@ search products
   cursor: pointer;
 }
 .place__like-icon--active {
-  fill: var(--orange);
+  fill: var(--primary-color);
 }
 .place__price {
   width: 14rem;
@@ -664,7 +653,7 @@ search products
   -o-border-radius: 2rem 2rem 0 0;
 }
 .place__price--text {
-  color: var(--orange);
+  color: var(--primary-color);
 }
 .place__title {
   font-family: var(--secondary-font);
@@ -688,12 +677,12 @@ search products
   color: var(--seconde-grey);
 }
 .destinations__btn {
-  border: 0.2rem solid var(--orange);
+  border: 0.2rem solid var(--primary-color);
   background-color: transparent;
-  color: var(--orange);
+  color: var(--primary-color);
 }
 .destinations__btn:hover {
-  background-color: var(--orange);
+  background-color: var(--primary-color);
   color: var(--white);
 }
 /*
