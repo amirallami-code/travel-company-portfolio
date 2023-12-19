@@ -1,5 +1,4 @@
 let $ = document
-var slideIndex = 0;
 const navBtn = $.querySelector('.nav__btn')
 const navMenu = $.querySelector('.nav-menu')
 const overlay = $.querySelector('.overlay')
@@ -46,24 +45,9 @@ placeLikeBtns.forEach((button) => {
     })
 })
 
-// advertise logic
-carousel();
-
 // FUNCTIONS
 const findUserLikeButton = button => {
     console.log(button)
-}
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > x.length) { slideIndex = 1 }
-    x[slideIndex - 1].style.display = "flex";
-    setTimeout(carousel, 5000);
 }
 
 // disable responsive for devices under 300px width
